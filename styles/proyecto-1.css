@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200&display=swap');
 
 :root {
-  --title: #334444;
+  --text: #334444;
   --body_card: #334444;
 
   --text_card: #FFF;
@@ -29,7 +29,7 @@
   text-align: center;
   font-size: 2.8rem; /* - */
   font-weight: 600;
-  color: var(--title);
+  color: var(--text);
 }
 
 #img-div {
@@ -48,14 +48,14 @@
 #img-caption {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 2rem 1rem 1rem; /* - */
-  font-size: 1.4rem;
+  padding: 1rem 1rem 0; /* - */
+  font-size: 1.3rem;
   text-align: center;
   color: var(--text_card);
 }
 
 #headline {
-  padding: 5rem 2rem;
+  padding: 3rem 0;
   font-size: 1.8rem;
   text-align: center;
   font-weight: 600;
@@ -64,11 +64,9 @@
 #tribute-info {
   width: 90%;
   max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
   font-size: 1.4rem;
-  
-  /* background-color: green; */
 }
 
 li:not( li:last-child ) {
@@ -76,5 +74,26 @@ li:not( li:last-child ) {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.blockquote,
+.cite {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.cite {
+  display: block;
+  text-align: right;
+  font-size: 1.4rem;
 }
